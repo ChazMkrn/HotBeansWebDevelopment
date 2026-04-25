@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans | Job Specification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="jobs">
+  <div class="site-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Hot Beans logo">
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="profile.html" data-nav="profile">Company Profile</a>
+        <a href="staff.html" data-nav="staff">Staff Page</a>
+        <a href="job-specification.html" data-nav="jobs">Job Specification</a>
+        <a href="courses.html" data-nav="courses">Links to Courses</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <h1>Hot Beans</h1>
+        <p>Who and what we are looking for to join us.</p>
+      </header>
+
+      <section class="text-panel">
+        <p>
+          We are currently looking to recruit prospective employees that have experience in web development, ideally between the ages of 18 and 25 who are also passionate, eager and ambitious. The company welcomes both national and international applicants because a wider range of backgrounds, ideas, and experiences helps strengthen the team. We welcome everyone and we do not discriminate anyone based on their race, gender, religion, sexuality and their ethnic background. 
+        </p>
+      </section>
+
+       <section class="text-panel">
+        <p>
+        So, if you believe that we are the right fit for you and are the correct next step for you to take in your career, why not apply on our job application form below where you will only have to answer some questions so we can determine if you are suitbale for the role Junior Web Developer for us.  
+        </p>
+      </section>
+	<section class="text-panel">
+        <p>
+        * After we accept or reject your application. Your data will be removed. However for Security reasons, we will keep your full name and whether your application was successful on an Excel spreadsheet. We at Hot Beans will always act responsibly with your data and will only ever ask for necessary data that does not violate any security policy.  
+        </p>
+      </section>
+
+
+      <section class="action-panel">
+        <button class="primary-button" type="button" data-open-modal="application-modal">Job Application Form</button>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="application-modal" aria-hidden="true" role="dialog" aria-labelledby="application-title">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close application form" data-close-modal>&times;</button>
+      <h2 id="application-title">Job Application Form</h2>
+      <form class="application-form">
+        <label>
+          Name
+          <input type="text" name="firstName" required>
+        </label>
+
+        <label>
+          Surname
+          <input type="text" name="surname" required>
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Age
+          <input type="number" name="age" required>
+        </label>
+
+        <label>
+          Why do you want to work at Hot Beans?
+          <textarea name="motivation" rows="5" required></textarea>
+        </label>
+
+        <button class="primary-button" type="submit">Submit Application</button>
+      </form>
+      <p class="form-message" data-form-message aria-live="polite"></p>
+    </div>
+  </div>
+
+       
+ </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
